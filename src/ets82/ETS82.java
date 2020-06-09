@@ -10,7 +10,11 @@ package ets82;
  * @author YENIFER LOPEZ
  */
 public class ETS82 {
-
+/**
+ * 
+ * @param numero
+ * @return devuelve un boolean
+ */
     static boolean esPrimo(int numero) {
         boolean primo = true;
 
@@ -26,7 +30,11 @@ public class ETS82 {
             return primo;
         }
     }
-
+/**
+ * 
+ * @param numero 
+ * @return el número dado la vuelta
+ */
     static int darLaVuelta(int numero) {
         String NUMERO = "" + numero; // convierte numero de int a String
         String RESULTADO = "";
@@ -38,7 +46,11 @@ public class ETS82 {
         int resultado = Integer.parseInt(RESULTADO);
         return resultado;
     }
-
+/**
+ * 
+ * @param numero
+ * @return devuelve un booleano
+ */
     static boolean esCapicua(int numero) {
         int numeroAlReves = darLaVuelta(numero);
         if (numero == numeroAlReves) {
@@ -47,7 +59,11 @@ public class ETS82 {
             return false;
         }
     }
-
+/**
+ * 
+ * @param numero
+ * @return devuelve un booleano
+ */
     static boolean esPrimoYCapicua(int numero) {
         if (esPrimo(numero) && esCapicua(numero)) {
             return true;
@@ -55,7 +71,11 @@ public class ETS82 {
             return false;
         }
     }
-
+/**
+ * 
+ * @param args 
+ * comprueba que imprima los número primos y capicuas
+ */
     public static void main(String[] args) {
         boolean seguir = true;
         int numero = 0;
